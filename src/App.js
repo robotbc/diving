@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Color from 'color';
+import { lighten } from './utils';
 import './App.css';
 
 const divingPic = 'https://goo.gl/HYUf8S';
@@ -12,10 +12,6 @@ const hardText = 'hard';
 
 const easyColor = '#1abc9c';
 const hardColor = '#e74c3c';
-
-const lighten = hex => Color(hex)
-  .lighten(0.7)
-  .hslString();
 
 class App extends Component {
   constructor() {
